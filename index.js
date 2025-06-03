@@ -8,6 +8,9 @@ require('dotenv').config();
 app.use(express.json());
 
 // Routes
+app.get('/',(req,res)=>{
+    return res.status(400).json({ message: "Welcome babu" });
+})
 app.use('/randi', MapRoute);
 
 // MongoDB Connection

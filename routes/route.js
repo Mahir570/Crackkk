@@ -3,9 +3,9 @@ const router = express.Router();
 const MapModel = require('../models/model');
 
 // GET /:id → Check if payment exists
-router.get('/',(req,res)=>{
-    return res.status(400).json({ message: "Welcome babu" });
-})
+// router.get('/',(req,res)=>{
+//     return res.status(400).json({ message: "Welcome babu" });
+// })
 router.get('/:id', async (req, res) => {
     const id = req.params.id;
 
